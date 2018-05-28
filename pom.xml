@@ -85,6 +85,7 @@
             <artifactId>spring-security-config</artifactId>
             <version>${spring.security.version}</version>
         </dependency>
+
         <!-- Javax and JSTL -->
         <dependency>
             <groupId>javax.servlet</groupId>
