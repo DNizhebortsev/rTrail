@@ -3,11 +3,11 @@ package io.khasang.rtrail.entiry;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "cats")
+//@Table(name = "cats")
 public class Cat {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="cat_id")
+   // @Column(name="cat_id")
     private long id;
 
     public String getName() {
