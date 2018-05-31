@@ -19,16 +19,16 @@ public class Cat {
     }
 
     public String getDiscription() {
-        return discription;
+        return description;
     }
 
-    public void setDiscription(String discription) {
-        this.discription = discription;
+    public void setDiscription(String description) {
+        this.description = description;
     }
 
     //    @Column(name = "names")
     private String name;
-    private String discription;
+    private String description;
 
     public long getId() {
         return id;

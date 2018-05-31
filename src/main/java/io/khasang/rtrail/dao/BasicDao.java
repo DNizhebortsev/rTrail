@@ -35,5 +35,18 @@ public interface BasicDao<T> {
      */
     Session getSessionFactory();
 
+    /**
+     * metod for deleted cat
+     *
+     * @param entityForDelete = entityFordelete's id for deleting
+     * @return delete entityFordelete
+     */
+    T delete(T entityForDelete);
 
+    /**
+     * metod for update entity
+     * new entity for update
+     */
+
+    T update(T entity);
 }

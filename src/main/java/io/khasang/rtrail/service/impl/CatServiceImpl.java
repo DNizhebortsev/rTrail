@@ -12,6 +12,7 @@ import java.util.List;
 public class CatServiceImpl implements CatService {
     @Autowired
     private CatDao catDao;
+
     @Override
     public Cat addCat(Cat cat) {
         return catDao.create(cat);
@@ -25,5 +26,22 @@ public class CatServiceImpl implements CatService {
     @Override
     public List<Cat> getAllCats() {
         return catDao.getList();
+    }
+
+    @Override
+    public Cat deleteCat(long id) {
+        Cat CatForDelete = getCatById(id);
+        return catDao.delete(CatForDelete);
+    }
+
+    @Override
+    public List<Cat> getCatsByName(String name) {
+        return catDao.getCatsByName(name);
+    }
+
+    @Override
+    public Cat updateCat(Cat cat) {
+        return catDao.update(cat);
+
     }
 }
